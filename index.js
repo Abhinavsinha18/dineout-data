@@ -8,6 +8,9 @@ const ModelData = require('./Models/dineout.model')
 
 // app.use(express.json());
 // app.use(cors);
+app.get('/', (req,res)=>{
+   res.send("welcome");
+})
 
 app.get('/products', async(req,res)=>{
 let data = await ModelDineout.ModelDineout.insertMany([
@@ -1589,7 +1592,7 @@ let data = await ModelDineout.ModelDineout.insertMany([
 })
 
 app.get('/blog-TopData',async(req,res)=>{
-    let data = await ModelBlog.ModelBlog.insertMany([
+    let data = await ModelBlog.ModelBlog.insnertMany([
         {
           "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/07/Blog-banner-100-1-705x268.jpg",
           "title": "Royal Enfield Presents SneakinOut by SteppinOut x SoleSearch – Now In 9 Cities",
@@ -1650,7 +1653,6 @@ app.get('/blog-TopData',async(req,res)=>{
 
       res.send(data);
 })
-
 
 app.get('/blog-BottemData' ,async (req,res)=>{
     let data = await ModelData.ModelData.insertMany([

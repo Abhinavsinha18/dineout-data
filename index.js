@@ -1,12 +1,11 @@
 const express = require('express');
 const app = express();
-const cors = require('cors');
 const connect = require('./db');
 const ModelDineout = require('./Models/dineout.model')
 const ModelBlog = require('./Models/dineout.model')
 const ModelData = require('./Models/dineout.model')
 
-// app.use(express.json());
+app.use(express.json());
 // app.use(cors);
 app.get('/', (req,res)=>{
    res.send("welcome");

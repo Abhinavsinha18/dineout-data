@@ -8,7 +8,7 @@ const {ModelBlog} = require('./Models/dineout.model')
 app.use(express.json());
 // app.use(cors);
 app.get('/', async(req,res)=>{
- await ModelBlog.insnertMany([
+ await ModelBlog.insertMany([
     {
       "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/07/Blog-banner-100-1-705x268.jpg",
       "title": "Royal Enfield Presents SneakinOut by SteppinOut x SoleSearch – Now In 9 Cities",

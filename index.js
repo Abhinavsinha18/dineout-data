@@ -3,7 +3,7 @@ const app = express();
 const connect = require('./db');
 const {ModelDineout} = require('./Models/dineout.model')
 const {ModelBlog} = require('./Models/dineout.model')
-const {ModelData} = require('./Models/dineout.model')
+// const {ModelData} = require('./Models/dineout.model')
 
 app.use(express.json());
 // app.use(cors);
@@ -1641,148 +1641,148 @@ app.get('/', async(req,res)=>{
       "discription2": "Beverages"
     }
   ])
-  let data = await ModelData.insertMany([
-    {
-      "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/04/BlogBanner-5-845x321.jpg",
-      "title": "Smoke House Deli Is Here To Redefine Healthy With Its Delish Menu!",
-      "date": "27th April 2022",
-      "blog-categories 2": "Bangalore",
-      "blog-categories 3": "Delhi",
-      "blog-categories 4": "Mumbai",
-      "blog-categories 5": "Restaurants",
-      "author": "Mohana Chakraborty",
-      "discription": "Touted as the country’s favorite European café, Smoke House Deli has been serving lip smacking healthy menu for almost forever.  A Look Around The décor at Smoke House Deli weaves a rather intimate environment with striking visual narratives on the walls that are as enduringly delicious as the menu. With a minimalistic all white build, […]",
-      "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/04/BlogBanner-5.jpg"
-    },
-    {
-      "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/04/Nomimono_Blog-845x321.jpg",
-      "title": "For A Never Ending Nom Nom Sesh Visit Nomimono",
-      "date": "8th April 2022",
-      "blog-categories 2": "Delhi",
-      "blog-categories 3": "Restaurants",
-      "blog-categories 4": "",
-      "blog-categories 5": "",
-      "author": "Mohana Chakraborty",
-      "discription": "Offer: Flat 20% off the total bill A Japanese word for ‘drink’, ‘beverage’, or ‘something to drink’ in general, Nomimono offers much more than just drinks. A Pan Asian wonder, Nomimono is a casual dining restaurant that is a heaven for Asian cuisine lovers.   A Closer Look Conceptualised and adorned with quirky furniture, snazzy […]",
-      "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/04/Nomimono_Blog.jpg"
-    },
-    {
-      "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/04/Blog-845x321.png",
-      "title": "This Should be Your Signature Summer Drink Based on Your Zodiac Sign",
-      "date": "8th April 2022",
-      "blog-categories 2": "Agra",
-      "blog-categories 3": "Ahmedabad",
-      "blog-categories 4": "Bangalore",
-      "blog-categories 5": "Chandigarh",
-      "author": "Shivangi Goel",
-      "discription": "Chilled beers, fruity cocktails, sparkling sodas, and milkshakes are synonymous with summers. After all, they are a perfect antidote to the scorching heat of the sun. And, so if you’re having a hard time picking an ideal summer drink to go well with your menu, we’re here to help you.  Well, how about choosing a […]",
-      "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/04/Blog.png",
-      "blog-categories 18": "Nagpur",
-      "blog-categories 19": "Pune",
-      "blog-categories 20": "Restaurants",
-      "blog-categories 21": "Surat",
-      "blog-categories 22": "Udaipur",
-      "blog-categories 23": "Vadodara"
-    },
-    {
-      "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/04/blog1-845x321.jpg",
-      "title": "World Health Day: 11 ways to make your dining experience healthier at restaurants",
-      "date": "7th April 2022",
-      "blog-categories 2": "Agra",
-      "blog-categories 3": "Ahmedabad",
-      "blog-categories 4": "Bangalore",
-      "blog-categories 5": "Chandigarh",
-      "author": "Dineout Passport",
-      "discription": "Keto diets, intermittent fasting, conscious eating, veganism and more…All these food trends seem to be taking over the world and the followers of these trends have demonised those of us who enjoy eating out! Well, this World Health Day, we want you to know that eating out is not a bad thing! In fact, with […]",
-      "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/04/blog1.jpg",
-      "blog-categories 18": "Pure Veg",
-      "blog-categories 19": "Jaipur",
-      "blog-categories 20": "Kochi",
-      "blog-categories 21": "Kolkata",
-      "blog-categories 22": "Lucknow",
-      "blog-categories 23": "Ludhiana"
-    },
-    {
-      "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/DP_The_Lodhi_lead-845x321.jpg",
-      "title": "Dineout Passport Experiences: Celebrating Femtastic 3.0 for a gender equal future at The Lodhi, New Delhi",
-      "date": "29th March 2022",
-      "blog-categories 2": "Chinese",
-      "blog-categories 3": "Delhi",
-      "blog-categories 4": "Pure Veg",
-      "blog-categories 5": "Dineout Passport",
-      "author": "Dineout Passport",
-      "discription": "Come March and the focus draws sharper on women. International Women’s Day celebrates and applauds the social, economic, cultural and political achievements of women. The ethos at Dineout Passport resonates deeply with the ideology of Gender Equal Future and in the Femtastic 3.0 event held at the Plantation Café (The Lodhi), the evening opened with […]",
-      "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/DP_The_Lodhi_lead.jpg",
-      "blog-categories 18": "Whats New"
-    },
-    {
-      "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/Blog-Banner-1-845x321.jpg",
-      "title": "PettinOut: The Ultimutt Pet Event For You and Your Dog",
-      "date": "24th March 2022",
-      "blog-categories 2": "Bangalore",
-      "blog-categories 3": "Delhi",
-      "blog-categories 4": "Mumbai",
-      "blog-categories 5": "Restaurants",
-      "author": "Nandini Poddar",
-      "discription": "SteppinOut by Dineout, in association with Heads Up For Tails, brings to you PettinOut—the best pet event in your city along with some great stuff for your furry family. While this will be an excellent hangout for pet parents such as yourself, pet lovers can also come here and have a good time. And it […]",
-      "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/Blog-Banner-1.jpg"
-    },
-    {
-      "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/Blog-Banner-845x321.png",
-      "title": "Feel The Beat of Live Music with Stereo Nights in Delhi",
-      "date": "24th March 2022",
-      "blog-categories 2": "Delhi",
-      "blog-categories 3": "",
-      "blog-categories 4": "",
-      "blog-categories 5": "",
-      "author": "Nandini Poddar",
-      "discription": "Get ready for a weekend full of flamboyant live music with Stereo Nights in Delhi! We all know that the people in Delhi enjoy live music. So behold, here is a list of restaurants who host live music in Delhi! With the perfect food and some dancing over live music, the Stereo Nights at Clue […]",
-      "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/Blog-Banner.png"
-    },
-    {
-      "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/water_edit_2-845x321.jpg",
-      "title": "World Water Day: Celebrating the most underrated liquid",
-      "date": "22nd March 2022",
-      "blog-categories 2": "Agra",
-      "blog-categories 3": "Ahmedabad",
-      "blog-categories 4": "Bangalore",
-      "blog-categories 5": "Chandigarh",
-      "author": "Dineout Passport",
-      "discription": "On this World Water Day, we want to highlight all the reasons that make this humble liquid everything it is. It’s a common fact that water is a life-giver but apart from that, we bet there are some facts about water that you were not aware of. Here are a few!  Maximizing physical performance Your […]",
-      "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/water_edit_2.jpg",
-      "blog-categories 18": "Indore",
-      "blog-categories 19": "Pure Veg",
-      "blog-categories 20": "Jaipur",
-      "blog-categories 21": "Kochi",
-      "blog-categories 22": "Kolkata",
-      "blog-categories 23": "Lucknow"
-    },
-    {
-      "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/dineout_blog_holi_chandigarh_1-845x321.jpg",
-      "title": "A colourful dining experience awaits you at these picture-perfect restaurants in Chandigarh",
-      "date": "18th March 2022",
-      "blog-categories 2": "Chandigarh",
-      "blog-categories 3": "Chinese",
-      "blog-categories 4": "Delhi",
-      "blog-categories 5": "Pure Veg",
-      "author": "Dineout Passport",
-      "discription": "There’s no greater chance to celebrate the Holi festivities than now, because this year, Holi is immediately followed by a fun weekend. We know you’re going to be ravenous after scrubbing all that gulaal off. Don’t worry! We’ve got you covered with these fantastic restaurants! Remember to keep the Holi spirit in mind while you gobble down […]",
-      "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/dineout_blog_holi_chandigarh_1.jpg"
-    },
-    {
-      "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/dineout_passport_holi_blog_1-845x321.jpg",
-      "title": "Celebrate your Holi weekend at these colourful restaurants in Mumbai",
-      "date": "18th March 2022",
-      "blog-categories 2": "Chinese",
-      "blog-categories 3": "Delhi",
-      "blog-categories 4": "Pure Veg",
-      "blog-categories 5": "Dineout Passport",
-      "author": "Dineout Passport",
-      "discription": "Holi this year is doubly special because it falls just before a weekend. We know you’ve been waiting to avenge all those water balloon attacks and obviously, once you’re done, you will need a place to kick back and relax at. We have here a list of restaurants for you to experience the various colours […]",
-      "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/dineout_passport_holi_blog_1.jpg",
-      "blog-categories 18": "Rooftop"
-    }
-  ])
+  // let data = await ModelData.insertMany([
+  //   {
+  //     "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/04/BlogBanner-5-845x321.jpg",
+  //     "title": "Smoke House Deli Is Here To Redefine Healthy With Its Delish Menu!",
+  //     "date": "27th April 2022",
+  //     "blog-categories 2": "Bangalore",
+  //     "blog-categories 3": "Delhi",
+  //     "blog-categories 4": "Mumbai",
+  //     "blog-categories 5": "Restaurants",
+  //     "author": "Mohana Chakraborty",
+  //     "discription": "Touted as the country’s favorite European café, Smoke House Deli has been serving lip smacking healthy menu for almost forever.  A Look Around The décor at Smoke House Deli weaves a rather intimate environment with striking visual narratives on the walls that are as enduringly delicious as the menu. With a minimalistic all white build, […]",
+  //     "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/04/BlogBanner-5.jpg"
+  //   },
+  //   {
+  //     "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/04/Nomimono_Blog-845x321.jpg",
+  //     "title": "For A Never Ending Nom Nom Sesh Visit Nomimono",
+  //     "date": "8th April 2022",
+  //     "blog-categories 2": "Delhi",
+  //     "blog-categories 3": "Restaurants",
+  //     "blog-categories 4": "",
+  //     "blog-categories 5": "",
+  //     "author": "Mohana Chakraborty",
+  //     "discription": "Offer: Flat 20% off the total bill A Japanese word for ‘drink’, ‘beverage’, or ‘something to drink’ in general, Nomimono offers much more than just drinks. A Pan Asian wonder, Nomimono is a casual dining restaurant that is a heaven for Asian cuisine lovers.   A Closer Look Conceptualised and adorned with quirky furniture, snazzy […]",
+  //     "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/04/Nomimono_Blog.jpg"
+  //   },
+  //   {
+  //     "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/04/Blog-845x321.png",
+  //     "title": "This Should be Your Signature Summer Drink Based on Your Zodiac Sign",
+  //     "date": "8th April 2022",
+  //     "blog-categories 2": "Agra",
+  //     "blog-categories 3": "Ahmedabad",
+  //     "blog-categories 4": "Bangalore",
+  //     "blog-categories 5": "Chandigarh",
+  //     "author": "Shivangi Goel",
+  //     "discription": "Chilled beers, fruity cocktails, sparkling sodas, and milkshakes are synonymous with summers. After all, they are a perfect antidote to the scorching heat of the sun. And, so if you’re having a hard time picking an ideal summer drink to go well with your menu, we’re here to help you.  Well, how about choosing a […]",
+  //     "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/04/Blog.png",
+  //     "blog-categories 18": "Nagpur",
+  //     "blog-categories 19": "Pune",
+  //     "blog-categories 20": "Restaurants",
+  //     "blog-categories 21": "Surat",
+  //     "blog-categories 22": "Udaipur",
+  //     "blog-categories 23": "Vadodara"
+  //   },
+  //   {
+  //     "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/04/blog1-845x321.jpg",
+  //     "title": "World Health Day: 11 ways to make your dining experience healthier at restaurants",
+  //     "date": "7th April 2022",
+  //     "blog-categories 2": "Agra",
+  //     "blog-categories 3": "Ahmedabad",
+  //     "blog-categories 4": "Bangalore",
+  //     "blog-categories 5": "Chandigarh",
+  //     "author": "Dineout Passport",
+  //     "discription": "Keto diets, intermittent fasting, conscious eating, veganism and more…All these food trends seem to be taking over the world and the followers of these trends have demonised those of us who enjoy eating out! Well, this World Health Day, we want you to know that eating out is not a bad thing! In fact, with […]",
+  //     "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/04/blog1.jpg",
+  //     "blog-categories 18": "Pure Veg",
+  //     "blog-categories 19": "Jaipur",
+  //     "blog-categories 20": "Kochi",
+  //     "blog-categories 21": "Kolkata",
+  //     "blog-categories 22": "Lucknow",
+  //     "blog-categories 23": "Ludhiana"
+  //   },
+  //   {
+  //     "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/DP_The_Lodhi_lead-845x321.jpg",
+  //     "title": "Dineout Passport Experiences: Celebrating Femtastic 3.0 for a gender equal future at The Lodhi, New Delhi",
+  //     "date": "29th March 2022",
+  //     "blog-categories 2": "Chinese",
+  //     "blog-categories 3": "Delhi",
+  //     "blog-categories 4": "Pure Veg",
+  //     "blog-categories 5": "Dineout Passport",
+  //     "author": "Dineout Passport",
+  //     "discription": "Come March and the focus draws sharper on women. International Women’s Day celebrates and applauds the social, economic, cultural and political achievements of women. The ethos at Dineout Passport resonates deeply with the ideology of Gender Equal Future and in the Femtastic 3.0 event held at the Plantation Café (The Lodhi), the evening opened with […]",
+  //     "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/DP_The_Lodhi_lead.jpg",
+  //     "blog-categories 18": "Whats New"
+  //   },
+  //   {
+  //     "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/Blog-Banner-1-845x321.jpg",
+  //     "title": "PettinOut: The Ultimutt Pet Event For You and Your Dog",
+  //     "date": "24th March 2022",
+  //     "blog-categories 2": "Bangalore",
+  //     "blog-categories 3": "Delhi",
+  //     "blog-categories 4": "Mumbai",
+  //     "blog-categories 5": "Restaurants",
+  //     "author": "Nandini Poddar",
+  //     "discription": "SteppinOut by Dineout, in association with Heads Up For Tails, brings to you PettinOut—the best pet event in your city along with some great stuff for your furry family. While this will be an excellent hangout for pet parents such as yourself, pet lovers can also come here and have a good time. And it […]",
+  //     "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/Blog-Banner-1.jpg"
+  //   },
+  //   {
+  //     "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/Blog-Banner-845x321.png",
+  //     "title": "Feel The Beat of Live Music with Stereo Nights in Delhi",
+  //     "date": "24th March 2022",
+  //     "blog-categories 2": "Delhi",
+  //     "blog-categories 3": "",
+  //     "blog-categories 4": "",
+  //     "blog-categories 5": "",
+  //     "author": "Nandini Poddar",
+  //     "discription": "Get ready for a weekend full of flamboyant live music with Stereo Nights in Delhi! We all know that the people in Delhi enjoy live music. So behold, here is a list of restaurants who host live music in Delhi! With the perfect food and some dancing over live music, the Stereo Nights at Clue […]",
+  //     "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/Blog-Banner.png"
+  //   },
+  //   {
+  //     "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/water_edit_2-845x321.jpg",
+  //     "title": "World Water Day: Celebrating the most underrated liquid",
+  //     "date": "22nd March 2022",
+  //     "blog-categories 2": "Agra",
+  //     "blog-categories 3": "Ahmedabad",
+  //     "blog-categories 4": "Bangalore",
+  //     "blog-categories 5": "Chandigarh",
+  //     "author": "Dineout Passport",
+  //     "discription": "On this World Water Day, we want to highlight all the reasons that make this humble liquid everything it is. It’s a common fact that water is a life-giver but apart from that, we bet there are some facts about water that you were not aware of. Here are a few!  Maximizing physical performance Your […]",
+  //     "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/water_edit_2.jpg",
+  //     "blog-categories 18": "Indore",
+  //     "blog-categories 19": "Pure Veg",
+  //     "blog-categories 20": "Jaipur",
+  //     "blog-categories 21": "Kochi",
+  //     "blog-categories 22": "Kolkata",
+  //     "blog-categories 23": "Lucknow"
+  //   },
+  //   {
+  //     "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/dineout_blog_holi_chandigarh_1-845x321.jpg",
+  //     "title": "A colourful dining experience awaits you at these picture-perfect restaurants in Chandigarh",
+  //     "date": "18th March 2022",
+  //     "blog-categories 2": "Chandigarh",
+  //     "blog-categories 3": "Chinese",
+  //     "blog-categories 4": "Delhi",
+  //     "blog-categories 5": "Pure Veg",
+  //     "author": "Dineout Passport",
+  //     "discription": "There’s no greater chance to celebrate the Holi festivities than now, because this year, Holi is immediately followed by a fun weekend. We know you’re going to be ravenous after scrubbing all that gulaal off. Don’t worry! We’ve got you covered with these fantastic restaurants! Remember to keep the Holi spirit in mind while you gobble down […]",
+  //     "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/dineout_blog_holi_chandigarh_1.jpg"
+  //   },
+  //   {
+  //     "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/03/dineout_passport_holi_blog_1-845x321.jpg",
+  //     "title": "Celebrate your Holi weekend at these colourful restaurants in Mumbai",
+  //     "date": "18th March 2022",
+  //     "blog-categories 2": "Chinese",
+  //     "blog-categories 3": "Delhi",
+  //     "blog-categories 4": "Pure Veg",
+  //     "blog-categories 5": "Dineout Passport",
+  //     "author": "Dineout Passport",
+  //     "discription": "Holi this year is doubly special because it falls just before a weekend. We know you’ve been waiting to avenge all those water balloon attacks and obviously, once you’re done, you will need a place to kick back and relax at. We have here a list of restaurants for you to experience the various colours […]",
+  //     "img2": "https://www.dineout.co.in/blog/wp-content/uploads/2022/03/dineout_passport_holi_blog_1.jpg",
+  //     "blog-categories 18": "Rooftop"
+  //   }
+  // ])
    res.send("welcome");
 })
 
@@ -1797,10 +1797,10 @@ app.get('/blog-TopData',async(req,res)=>{
   res.send(find);
 })
 
-app.get('/blog-BottemData' ,async (req,res)=>{
-  const find =await ModelData.find();
-  res.send(find);
-})
+// app.get('/blog-BottemData' ,async (req,res)=>{
+//   const find =await ModelData.find();
+//   res.send(find);
+// })
 
 
 

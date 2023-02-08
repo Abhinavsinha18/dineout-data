@@ -26,31 +26,31 @@ const blogSchema = mongoose.Schema({
     author : String
 })
 
-const bottemSchema = mongoose.Schema({
-    img:String,
-    title : String,
-    date :String,
-    "blog-categories 2": String,
-    "blog-categories 3" : String,
-    "blog-categories 4" : String,
-    "blog-categories 5" : String,
-    "blog-categories 18" : String,
-    "blog-categories 19" : String,
-    "blog-categories 20" : String,
-    "blog-categories 21" : String,
-    "blog-categories 22" : String,
-    author :String,
-    discription : String,
-    img2 : String
+// const bottemSchema = mongoose.Schema({
+//     img:String,
+//     title : String,
+//     date :String,
+//     "blog-categories 2": String,
+//     "blog-categories 3" : String,
+//     "blog-categories 4" : String,
+//     "blog-categories 5" : String,
+//     "blog-categories 18" : String,
+//     "blog-categories 19" : String,
+//     "blog-categories 20" : String,
+//     "blog-categories 21" : String,
+//     "blog-categories 22" : String,
+//     author :String,
+//     discription : String,
+//     img2 : String
 
-})
+// })
 
 const ModelDineout = mongoose.model('products',dineoutSchema);
 const ModelBlog = mongoose.model('blog-TopData',blogSchema);
-const ModelData = mongoose.model('blog-BottemData',bottemSchema);
+// const ModelData = mongoose.model('blog-BottemData',bottemSchema);
 
 module.exports={
     ModelDineout,
     ModelBlog,
-    ModelData
+    // ModelData
 }

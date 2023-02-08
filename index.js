@@ -1591,7 +1591,7 @@ let data = await ModelDineout.insertMany([
 })
 
 app.get('/blog-TopData',async(req,res)=>{
-    let data = await ModelBlog.ModelBlog.insnertMany([
+    let data = await ModelBlog.insnertMany([
         {
           "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/07/Blog-banner-100-1-705x268.jpg",
           "title": "Royal Enfield Presents SneakinOut by SteppinOut x SoleSearch – Now In 9 Cities",
@@ -1654,7 +1654,7 @@ app.get('/blog-TopData',async(req,res)=>{
 })
 
 app.get('/blog-BottemData' ,async (req,res)=>{
-    let data = await ModelData.ModelData.insertMany([
+    let data = await ModelData.insertMany([
         {
           "img": "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2022/04/BlogBanner-5-845x321.jpg",
           "title": "Smoke House Deli Is Here To Redefine Healthy With Its Delish Menu!",

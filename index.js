@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 const connect = require('./db');
-const ModelDineout = require('./Models/dineout.model')
-const ModelBlog = require('./Models/dineout.model')
-const ModelData = require('./Models/dineout.model')
+const {ModelDineout} = require('./Models/dineout.model')
+const {ModelBlog} = require('./Models/dineout.model')
+const {ModelData} = require('./Models/dineout.model')
 
 app.use(express.json());
 // app.use(cors);
@@ -12,7 +12,7 @@ app.get('/', (req,res)=>{
 })
 
 app.get('/products', async(req,res)=>{
-let data = await ModelDineout.ModelDineout.insertMany([
+let data = await ModelDineout.insertMany([
     {
       "id": 1,
       "image": "https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/a/j/p20996-145631488756cd9a0796608.jpg?tr=tr:n-medium",
